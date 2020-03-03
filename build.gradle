@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+plugins {
+    id 'java'
+    id("io.qameta.allure") version "2.7.0"
+}
+description = "JDI Dark Gradle JUnit example"
+group = "com.epam.jdi"
+version = version
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+allure {
+autoconfigure = true
+    version = '2.9.0'
+
+    useJUnit5 {
+        version = '2.9.0'
+    }
+}
+
+dependencies {
+    implementation("org.junit.jupiter:junit-jupiter-api:5.4.0")
+    testRuntimeOnly(
+            'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+    )
+	compile("com.epam.jdi:jdi-dark:1.0.1")
+    compile("org.slf4j:slf4j-nop:1.7.13")
+}
+
+test {
+    testLogging.showStandardStreams = true
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
