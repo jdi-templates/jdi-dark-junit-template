@@ -1,17 +1,17 @@
 package com.epam.jdi.httptests.example;
 
 import com.epam.http.response.RestResponse;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
-import static com.epam.http.requests.RequestData.requestData;
+import static com.epam.http.requests.RequestDataInfo.requestData;
 import static com.epam.http.requests.RestMethods.GET;
 import static com.epam.http.requests.ServiceInit.init;
 import static com.epam.http.response.ResponseStatusType.SERVER_ERROR;
 
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Example of endpoint tests with setting request data on-fly
@@ -58,8 +58,8 @@ public class ServiceTests {
     @Test
     public void statusTestWithQueryInPath() {
         RestResponse resp = service.statusWithQuery.callWithNamedParams("503", "some");
-        Assertions.assertEquals(resp.status.code, 503);
-        Assertions.assertEquals(resp.status.type, SERVER_ERROR);
+        assertEquals(resp.status.code, 503);
+        assertEquals(resp.status.type, SERVER_ERROR);
         resp.isEmpty();
     }
 
@@ -75,7 +75,7 @@ public class ServiceTests {
     public void htmlBodyParseTest() {
         RestResponse resp = service.getHTMLMethod.call();
         resp.isOk();
-        Assertions.assertEquals(resp.getFromHtml("html.body.h1"), "Herman Melville - Moby-Dick");
+        assertEquals(resp.getFromHtml("html.body.h1"), "Herman Melville - Moby-Dick");
     }
 
     @Test

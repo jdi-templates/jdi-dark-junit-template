@@ -1,8 +1,9 @@
 package com.epam.jdi.httptests.example.dto;
 
-public class Info {
+import com.epam.jdi.tools.DataClass;
+
+public class Info extends DataClass<Info> {
     public Object args;
     public IdName headers;
-    public String origin;
-    public String url;
+    public String origin, url;
 }
