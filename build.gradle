@@ -37,6 +37,14 @@ dependencies {
     compile("org.slf4j:slf4j-nop:1.7.13")
 }
 
+def env = project.hasProperty("BUILD_PROFILE") ? project.getProperty("BUILD_PROFILE") :
+        System.getProperty("BUILD_PROFILE") ? System.getProperty("BUILD_PROFILE") : System.getenv("BUILD_PROFILE")
+processTestResources {
+    expand([
+            profile: env == null ? '${profile}' : env
+    ])
+}
+
 test {
     testLogging.showStandardStreams = true
     useJUnitPlatform()
