@@ -1,11 +1,12 @@
 package com.epam.jdi.httptests.example;
 
+import com.epam.http.requests.RequestDataFacrtory;
 import com.epam.http.response.RestResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
-import static com.epam.http.requests.RequestDataInfo.requestData;
+import static com.epam.http.requests.RequestDataFacrtory.cookies;
 import static com.epam.http.requests.RestMethods.GET;
 import static com.epam.http.requests.ServiceInit.init;
 import static com.epam.http.response.ResponseStatusType.SERVER_ERROR;
@@ -38,10 +39,10 @@ public class ServiceTests {
 
     @Test
     public void noServiceObjectTest() {
-        RestResponse resp = GET(requestData(
+        RestResponse resp = GET(RequestDataFacrtory.requestData(
                 rd -> {
                     rd.uri = "https://httpbin.org/get";
-                    rd.addHeaders(new Object[][]{
+                    rd.addHeaders().addAll(new Object[][]{
                             {"Name", "Roman"},
                             {"Id", "TestTest"}
                     });
@@ -58,8 +59,8 @@ public class ServiceTests {
     @Test
     public void statusTestWithQueryInPath() {
         RestResponse resp = service.statusWithQuery.callWithNamedParams("503", "some");
-        assertEquals(resp.status.code, 503);
-        assertEquals(resp.status.type, SERVER_ERROR);
+        assertEquals(resp.getStatus().code, 503);
+        assertEquals(resp.getStatus().type, SERVER_ERROR);
         resp.isEmpty();
     }
 
@@ -80,8 +81,7 @@ public class ServiceTests {
 
     @Test
     public void cookiesTest() {
-        RestResponse response = service.getCookies.call(requestData(requestData ->
-                requestData.addCookie("additionalCookie", "test")));
+        RestResponse response = service.getCookies.call(cookies().add("additionalCookie", "test"));
         response.isOk()
                 .body("cookies.additionalCookie", equalTo("test"))
                 .body("cookies.session_id", equalTo("1234"))
