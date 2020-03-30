@@ -21,7 +21,7 @@ java {
 
 allure {
 autoconfigure = true
-    version = '2.9.0'
+    version = '2.0.1'
 
     useJUnit5 {
         version = '2.9.0'
@@ -29,18 +29,23 @@ autoconfigure = true
 }
 
 dependencies {
-    implementation("org.junit.jupiter:junit-jupiter-api:5.4.0")
     testRuntimeOnly(
             'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     )
 	compile("com.epam.jdi:jdi-dark:1.0.2")
     compile("org.slf4j:slf4j-nop:1.7.13")
+    compile("org.junit.jupiter:junit-jupiter-api:5.4.0")
+    compile("org.junit.platform:junit-platform-runner:1.4.2")
 }
 
 test {
     testLogging.showStandardStreams = true
-    useJUnitPlatform()
+    useJUnitPlatform ()
+    filter {
+        //include specific method in any of the tests
+    }
 }
+
 
 repositories {
     mavenLocal()
