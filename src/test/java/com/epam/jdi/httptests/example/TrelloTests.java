@@ -3,16 +3,20 @@ package com.epam.jdi.httptests.example;
 import com.epam.jdi.httptests.example.dto.*;
 import com.epam.jdi.httptests.utils.TrelloDataGenerator;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 
 import java.util.List;
 
 import static com.epam.http.requests.ServiceInit.init;
 import static com.epam.jdi.tools.LinqUtils.map;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Example of creating business flow tests
  */
+@Execution(ExecutionMode.CONCURRENT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TrelloTests {
 
@@ -23,7 +27,7 @@ public class TrelloTests {
 
     @Test
     public void createCardInBoard() {
-
+        System.out.println("thread 1 " + Thread.currentThread().getId());
         //Crate board
         Board board = TrelloDataGenerator.generateBoard();
         Board createdBoard = TrelloService.createBoard(board);
@@ -45,7 +49,7 @@ public class TrelloTests {
 
     @Test
     public void assignBoardToOrganization() {
-
+        System.out.println("thread 2 " + Thread.currentThread().getId());
         //Create organization
         Organization organization = TrelloDataGenerator.generateOrganization();
         Organization createOrg = TrelloService.createOrganization(organization);
