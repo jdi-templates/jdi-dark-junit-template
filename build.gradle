@@ -33,8 +33,16 @@ dependencies {
     testRuntimeOnly(
             'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     )
-	compile("com.epam.jdi:jdi-dark:1.0.2")
+	compile("com.epam.jdi:jdi-dark:1.0.3")
     compile("org.slf4j:slf4j-nop:1.7.13")
+}
+
+def env = project.hasProperty("BUILD_PROFILE") ? project.getProperty("BUILD_PROFILE") :
+        System.getProperty("BUILD_PROFILE") ? System.getProperty("BUILD_PROFILE") : System.getenv("BUILD_PROFILE")
+processTestResources {
+    expand([
+            profile: env == null ? '${profile}' : env
+    ])
 }
 
 test {

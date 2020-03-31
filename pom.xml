@@ -15,14 +15,14 @@
         <allure.maven>2.9</allure.maven>
         <aspectj.version>1.9.1</aspectj.version>
         <!--suppress UnresolvedMavenProperty -->
-        <profile.val>${env.BUILD_PROFILE}</profile.val>
+        <profile>${env.BUILD_PROFILE}</profile>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-dark</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

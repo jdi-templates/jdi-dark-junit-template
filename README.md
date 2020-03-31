@@ -26,3 +26,14 @@ https://pix.my/6FXX7l
 6. Use as template for your project: 
 * just remove all content from **src/main/.../example** folder, add your package you Service Objects
 * replace tests in **src/test/.../example** folder with your tests
+7. For running parameterized builds (e.g. in CI/CD tools) you can use profiles:
+* Gradle:</br>
+  ``` gradlew clean build -PBUILD_PROFILE=name of your .properties file placed in src/test/resources ```
+ </br> or </br>
+  ``` gradlew clean build -DBUILD_PROFILE=name of your .properties file placed in src/test/resources ```
+ </br> or </br>
+  ``` EXPORT BUILD_PROFILE=name of your .properties file placed in src/test/resources && gradlew clean build ```
+* Maven:</br>
+  ``` mvn clean install -DBUILD_PROFILE=name of your .properties file placed in src/test/resources ```
+ </br> or </br>
+  ``` EXPORT BUILD_PROFILE=name of your .properties file placed in src/test/resources && mvn clean install ```

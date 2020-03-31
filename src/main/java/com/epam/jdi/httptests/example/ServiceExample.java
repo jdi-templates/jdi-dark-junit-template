@@ -1,18 +1,10 @@
 package com.epam.jdi.httptests.example;
 
+import com.epam.http.annotations.*;
 import com.epam.http.requests.RestMethod;
-import com.epam.http.annotations.Header;
-import com.epam.http.annotations.Headers;
-import com.epam.http.annotations.ServiceDomain;
-import com.epam.http.annotations.POST;
-import com.epam.http.annotations.PUT;
-import com.epam.http.annotations.GET;
-import com.epam.http.annotations.PATCH;
-import com.epam.http.annotations.DELETE;
-import com.epam.http.annotations.ContentType;
-import com.epam.http.annotations.Cookies;
-import com.epam.http.annotations.Cookie;
 import com.epam.jdi.httptests.example.dto.Info;
+
+import java.util.concurrent.TimeUnit;
 
 import static io.restassured.http.ContentType.HTML;
 import static io.restassured.http.ContentType.JSON;
@@ -40,7 +32,9 @@ public class ServiceExample {
     @PUT("/put") RestMethod putMethod;
     @PATCH("/patch") RestMethod patch;
     @DELETE("/delete") RestMethod delete;
-    @GET("/status/{status}") RestMethod status;
+    @GET("/status/{status}")
+    @RetryOnFailure(errorCodes = 500, numberOfRetryAttempts = 4, delay = 1, unit = TimeUnit.SECONDS)
+    RestMethod status;
 
     @GET("/status/{status}?q={value}") RestMethod statusWithQuery;
     @PUT("/get?q=1") RestMethod getMethodWithQuery;
