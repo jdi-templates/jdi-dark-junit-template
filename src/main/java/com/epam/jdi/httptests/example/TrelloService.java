@@ -1,15 +1,13 @@
 package com.epam.jdi.httptests.example;
 
 import com.epam.http.annotations.*;
-import com.epam.http.requests.DataMethod;
-import com.epam.http.requests.RestMethod;
+import com.epam.http.requests.*;
 import com.epam.jdi.httptests.example.dto.*;
 
-import java.util.Arrays;
 import java.util.List;
 
-import static com.epam.http.requests.RequestDataFacrtory.pathParams;
 import static io.restassured.http.ContentType.JSON;
+import static java.util.Arrays.asList;
 
 /**
  * Example of service for working with Trello API (Service for Project Dashboard creating)
@@ -29,10 +27,10 @@ public class TrelloService {
 
     @ContentType(JSON)
     @POST(BOARDS)
-    public static DataMethod<Board> boardsPost;
+    public static RestDataMethod<Board> boardsPost;
 
-    public static Board createBoard(Board board) {
-        return boardsPost.callObject(board);
+    public static synchronized Board createBoard(Board board) {
+        return boardsPost.postAsData(board);
     }
 
     @ContentType(JSON)
@@ -40,7 +38,7 @@ public class TrelloService {
     public static RestMethod getBoardById;
 
     public static Board getBoard(String boardId) {
-        return getBoardById.call(pathParams().add("board_id", boardId)).getRaResponse().as(Board.class);
+        return getBoardById.call(RequestDataFactory.pathParams().add("board_id", boardId)).getRaResponse().as(Board.class);
     }
 
     @ContentType(JSON)
@@ -72,7 +70,7 @@ public class TrelloService {
     public static RestMethod getCardBoard;
 
     public static Board getCardBoard(String cardId) {
-        return getCardBoard.call(pathParams().add("id", cardId)).getRaResponse().as(Board.class);
+        return getCardBoard.call(RequestDataFactory.pathParams().add("id", cardId)).getRaResponse().as(Board.class);
     }
 
     @ContentType(JSON)
@@ -109,7 +107,7 @@ public class TrelloService {
     public static RestMethod getOrganizationBoards;
 
     public static List<Board> getOrganizationBoards(Organization organization) {
-        return Arrays.asList(getOrganizationBoards.call(pathParams().add("id", organization.id)).getRaResponse().as(Board[].class));
+        return asList(getOrganizationBoards.call(RequestDataFactory.pathParams().add("id", organization.id)).getRaResponse().as(Board[].class));
     }
 
 }

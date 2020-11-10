@@ -1,14 +1,11 @@
 package com.epam.jdi.httptests.example;
 
+import com.epam.http.requests.RequestDataFactory;
+import com.epam.http.requests.RestMethods;
 import com.epam.http.response.RestResponse;
 import org.junit.jupiter.api.*;
 
-import static com.epam.http.requests.RequestDataFacrtory.cookies;
-import static com.epam.http.requests.RequestDataFacrtory.pathParams;
-import static com.epam.http.requests.RequestDataFacrtory.requestData;
-import static com.epam.http.requests.RestMethods.GET;
 import static com.epam.http.requests.ServiceInit.init;
-import static com.epam.http.response.ResponseStatusType.SERVER_ERROR;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -37,10 +34,9 @@ public class ServiceTests {
 
     @Test
     public void noServiceObjectTest() {
-        RestResponse resp = GET(requestData(
-                rd -> {
+        RestResponse resp = RestMethods.GET(RequestDataFactory.requestData(rd -> {
                     rd.uri = "https://httpbin.org/get";
-                    rd.addHeaders().addAll(new Object[][]{
+                    rd.headerUpdater().addAll(new Object[][]{
                             {"Name", "Roman"},
                             {"Id", "TestTest"}
                     });
@@ -56,15 +52,14 @@ public class ServiceTests {
 
     @Test
     public void statusTestWithQueryInPath() {
-        RestResponse resp = service.statusWithQuery.callWithNamedParams("503", "some");
+        RestResponse resp = service.statusWithQuery.pathParams("503", "some").call();
         assertEquals(resp.getStatus().code, 503);
-        assertEquals(resp.getStatus().type, SERVER_ERROR);
         resp.isEmpty();
     }
 
     @Test
-    public void retryRequestTest(){
-        service.status.call(pathParams().add("status","500"))
+    public void retryRequestTest() {
+        service.status.call(RequestDataFactory.pathParams().add("status", "500"))
                 .assertThat()
                 .statusCode(500);
     }
@@ -86,7 +81,7 @@ public class ServiceTests {
 
     @Test
     public void cookiesTest() {
-        RestResponse response = service.getCookies.call(cookies().add("additionalCookie", "test"));
+        RestResponse response = service.getCookies.call(RequestDataFactory.cookies().add("additionalCookie", "test"));
         response.isOk()
                 .body("cookies.additionalCookie", equalTo("test"))
                 .body("cookies.session_id", equalTo("1234"))
