@@ -31,6 +31,7 @@ jobs:
           java-package: jdk
       - name: Prepare environment
         run: |
+          sudo chmod +x ./gradlew
           sudo apt-get -y install jq
           java -Xmx32m -version
           env
