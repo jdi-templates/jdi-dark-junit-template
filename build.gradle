@@ -34,7 +34,6 @@ dependencies {
             'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     )
 	compile("com.epam.jdi:jdi-dark:1.1.7")
-    compile("org.slf4j:slf4j-nop:1.7.13")
 }
 
 def env = project.hasProperty("BUILD_PROFILE") ? project.getProperty("BUILD_PROFILE") :
