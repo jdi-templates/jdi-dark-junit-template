@@ -1,11 +1,11 @@
 {
-  "uid" : "6593310c6e328479",
+  "uid" : "f1188947dbad606",
   "name" : "assignBoardToOrganization()",
   "historyId" : "4d9f70573ecd1dc70043597f2c4ce2fd",
   "time" : {
-    "start" : 1630072464869,
-    "stop" : 1630072466175,
-    "duration" : 1306
+    "start" : 1630072560012,
+    "stop" : 1630072561136,
+    "duration" : 1124
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6593310c6e328479.json",
+  "source" : "f1188947dbad606.json",
   "parameterValues" : [ ]
 }
