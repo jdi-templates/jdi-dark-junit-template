@@ -1,100 +1,100 @@
 [ {
-  "uid" : "c24bc268830c1304",
-  "name" : "cookiesTest()",
-  "time" : {
-    "start" : 1630064936207,
-    "stop" : 1630064938305,
-    "duration" : 2098
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d96eb032809e567b",
-  "name" : "createCardInBoard()",
-  "time" : {
-    "start" : 1630064949053,
-    "stop" : 1630064951001,
-    "duration" : 1948
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c2a95a39125443d4",
-  "name" : "assignBoardToOrganization()",
-  "time" : {
-    "start" : 1630064947849,
-    "stop" : 1630064949050,
-    "duration" : 1201
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4bea506b6a218d",
-  "name" : "simpleRestTest()",
-  "time" : {
-    "start" : 1630064945843,
-    "stop" : 1630064946343,
-    "duration" : 500
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4f79183ab4135d8c",
-  "name" : "assignBoardToOrganization()",
-  "time" : {
-    "start" : 1630064947320,
-    "stop" : 1630064947838,
-    "duration" : 518
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ee18c0d5c09485c9",
-  "name" : "statusTestWithQueryInPath()",
-  "time" : {
-    "start" : 1630064946345,
-    "stop" : 1630064946800,
-    "duration" : 455
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e92aa8c8e4f3aed0",
-  "name" : "retryRequestTest()",
-  "time" : {
-    "start" : 1630064938368,
-    "stop" : 1630064944659,
-    "duration" : 6291
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5afcf1c9aa5220c",
-  "name" : "noServiceObjectTest()",
-  "time" : {
-    "start" : 1630064945292,
-    "stop" : 1630064945840,
-    "duration" : 548
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "34a0f91a685df8a4",
+  "uid" : "876eed8deae81eb7",
   "name" : "htmlBodyParseTest()",
   "time" : {
-    "start" : 1630064944661,
-    "stop" : 1630064945291,
-    "duration" : 630
+    "start" : 1630065025523,
+    "stop" : 1630065025806,
+    "duration" : 283
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9c7abf22661e13ff",
+  "uid" : "f1d891085be50905",
+  "name" : "createCardInBoard()",
+  "time" : {
+    "start" : 1630065027508,
+    "stop" : 1630065028732,
+    "duration" : 1224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9205e79fb167424",
+  "name" : "assignBoardToOrganization()",
+  "time" : {
+    "start" : 1630065026398,
+    "stop" : 1630065026845,
+    "duration" : 447
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e26dddd2c0bb5f38",
+  "name" : "noServiceObjectTest()",
+  "time" : {
+    "start" : 1630065025808,
+    "stop" : 1630065025977,
+    "duration" : 169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee0901ba79e1d0b3",
+  "name" : "simpleRestTest()",
+  "time" : {
+    "start" : 1630065025979,
+    "stop" : 1630065026115,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2b31990d1c2f14b",
+  "name" : "statusTestWithQueryInPath()",
+  "time" : {
+    "start" : 1630065026116,
+    "stop" : 1630065026207,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5359538c340c941",
   "name" : "serviceInitTest()",
   "time" : {
-    "start" : 1630064946801,
-    "stop" : 1630064947270,
-    "duration" : 469
+    "start" : 1630065026208,
+    "stop" : 1630065026315,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11d811823e723f86",
+  "name" : "retryRequestTest()",
+  "time" : {
+    "start" : 1630065021082,
+    "stop" : 1630065025521,
+    "duration" : 4439
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d0d0238711b5305",
+  "name" : "cookiesTest()",
+  "time" : {
+    "start" : 1630065019409,
+    "stop" : 1630065021002,
+    "duration" : 1593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56aa2841750d2c27",
+  "name" : "assignBoardToOrganization()",
+  "time" : {
+    "start" : 1630065026858,
+    "stop" : 1630065027505,
+    "duration" : 647
   },
   "status" : "passed",
   "severity" : "normal"
