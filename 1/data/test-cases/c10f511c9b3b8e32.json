@@ -1,0 +1,37 @@
+{
+  "uid" : "c10f511c9b3b8e32",
+  "name" : "statusTestWithQueryInPath()",
+  "historyId" : "79df6ef7ed9b677a5c0ac5aef5cbeab5",
+  "time" : {
+    "start" : 1630064856523,
+    "stop" : 1630064856956,
+    "duration" : 433
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "package",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c10f511c9b3b8e32.json",
+  "parameterValues" : [ ]
+}

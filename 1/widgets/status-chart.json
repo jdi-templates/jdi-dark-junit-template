@@ -1,0 +1,101 @@
+[ {
+  "uid" : "19dce733fabc5b59",
+  "name" : "serviceInitTest()",
+  "time" : {
+    "start" : 1630064856957,
+    "stop" : 1630064857454,
+    "duration" : 497
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6754cf57ed416ab2",
+  "name" : "assignBoardToOrganization()",
+  "time" : {
+    "start" : 1630064858239,
+    "stop" : 1630064859291,
+    "duration" : 1052
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e34eea2abcd4ca37",
+  "name" : "cookiesTest()",
+  "time" : {
+    "start" : 1630064845512,
+    "stop" : 1630064848149,
+    "duration" : 2637
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4fa7940607c038d",
+  "name" : "simpleRestTest()",
+  "time" : {
+    "start" : 1630064856052,
+    "stop" : 1630064856522,
+    "duration" : 470
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "948ca9fd84999850",
+  "name" : "retryRequestTest()",
+  "time" : {
+    "start" : 1630064848244,
+    "stop" : 1630064854722,
+    "duration" : 6478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "218a1dba84855b56",
+  "name" : "createCardInBoard()",
+  "time" : {
+    "start" : 1630064859293,
+    "stop" : 1630064861384,
+    "duration" : 2091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41c488c7de0f6bd8",
+  "name" : "assignBoardToOrganization()",
+  "time" : {
+    "start" : 1630064857563,
+    "stop" : 1630064858232,
+    "duration" : 669
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32faafadb09dd1e0",
+  "name" : "noServiceObjectTest()",
+  "time" : {
+    "start" : 1630064855488,
+    "stop" : 1630064856050,
+    "duration" : 562
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c10f511c9b3b8e32",
+  "name" : "statusTestWithQueryInPath()",
+  "time" : {
+    "start" : 1630064856523,
+    "stop" : 1630064856956,
+    "duration" : 433
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e542427dd21fb28",
+  "name" : "htmlBodyParseTest()",
+  "time" : {
+    "start" : 1630064854725,
+    "stop" : 1630064855487,
+    "duration" : 762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,37 @@
+{
+  "uid" : "32faafadb09dd1e0",
+  "name" : "noServiceObjectTest()",
+  "historyId" : "db381fb27b4ab66e475a34f009137665",
+  "time" : {
+    "start" : 1630064855488,
+    "stop" : 1630064856050,
+    "duration" : 562
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "package",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "32faafadb09dd1e0.json",
+  "parameterValues" : [ ]
+}

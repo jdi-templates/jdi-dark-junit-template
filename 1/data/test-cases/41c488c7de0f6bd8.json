@@ -1,0 +1,59 @@
+{
+  "uid" : "41c488c7de0f6bd8",
+  "name" : "assignBoardToOrganization()",
+  "historyId" : "81c24cc8f5e83397577d374eeacf734",
+  "time" : {
+    "start" : 1630064857563,
+    "stop" : 1630064858232,
+    "duration" : 669
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4484c6f80943303f",
+      "name" : "Request",
+      "source" : "4484c6f80943303f.html",
+      "type" : "text/html",
+      "size" : 1163
+    }, {
+      "uid" : "469acc10b1801dee",
+      "name" : "HTTP/1.1 400 Bad Request",
+      "source" : "469acc10b1801dee.html",
+      "type" : "text/html",
+      "size" : 2857
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "com.epam.jdi.httptests.example.ServiceSettingsTests"
+  }, {
+    "name" : "package",
+    "value" : "com.epam.jdi.httptests.example.ServiceSettingsTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41c488c7de0f6bd8.json",
+  "parameterValues" : [ ]
+}

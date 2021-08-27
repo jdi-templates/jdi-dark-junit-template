@@ -1,0 +1,37 @@
+{
+  "uid" : "c4fa7940607c038d",
+  "name" : "simpleRestTest()",
+  "historyId" : "500adcf4fbca137846d316a85c8b6e08",
+  "time" : {
+    "start" : 1630064856052,
+    "stop" : 1630064856522,
+    "duration" : 470
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "package",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4fa7940607c038d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,37 @@
+{
+  "uid" : "9e542427dd21fb28",
+  "name" : "htmlBodyParseTest()",
+  "historyId" : "2aea9c22aacacdd9885f580447e3a35a",
+  "time" : {
+    "start" : 1630064854725,
+    "stop" : 1630064855487,
+    "duration" : 762
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "package",
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e542427dd21fb28.json",
+  "parameterValues" : [ ]
+}
