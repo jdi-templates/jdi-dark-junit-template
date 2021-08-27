@@ -1,11 +1,11 @@
 {
-  "uid" : "592958ebe3d37809",
-  "name" : "createCardInBoard()",
-  "historyId" : "a36ba0e1fa423739e9d6e131ad4a9fda",
+  "uid" : "ce49e7f749a8219d",
+  "name" : "htmlBodyParseTest()",
+  "historyId" : "2aea9c22aacacdd9885f580447e3a35a",
   "time" : {
-    "start" : 1630065104720,
-    "stop" : 1630065105828,
-    "duration" : 1108
+    "start" : 1630065181729,
+    "stop" : 1630065182088,
+    "duration" : 359
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,10 +14,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "com.epam.jdi.httptests.example.TrelloTests"
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
   }, {
     "name" : "package",
-    "value" : "com.epam.jdi.httptests.example.TrelloTests"
+    "value" : "com.epam.jdi.httptests.example.ServiceTests"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "592958ebe3d37809.json",
+  "source" : "ce49e7f749a8219d.json",
   "parameterValues" : [ ]
 }

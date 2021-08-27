@@ -1,11 +1,11 @@
 {
-  "uid" : "106e60b5bf5f585b",
-  "name" : "cookiesTest()",
-  "historyId" : "735d4adedd905decb6dc7b8cbad6081f",
+  "uid" : "8b2516336d8538a1",
+  "name" : "assignBoardToOrganization()",
+  "historyId" : "4d9f70573ecd1dc70043597f2c4ce2fd",
   "time" : {
-    "start" : 1630065096656,
-    "stop" : 1630065098230,
-    "duration" : 1574
+    "start" : 1630065183505,
+    "stop" : 1630065184156,
+    "duration" : 651
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,10 +14,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "package",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "106e60b5bf5f585b.json",
+  "source" : "8b2516336d8538a1.json",
   "parameterValues" : [ ]
 }
