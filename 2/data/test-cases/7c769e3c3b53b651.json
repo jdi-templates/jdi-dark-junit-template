@@ -1,11 +1,11 @@
 {
-  "uid" : "e274112da275208f",
+  "uid" : "7c769e3c3b53b651",
   "name" : "assignBoardToOrganization()",
   "historyId" : "81c24cc8f5e83397577d374eeacf734",
   "time" : {
-    "start" : 1630072373662,
-    "stop" : 1630072374144,
-    "duration" : 482
+    "start" : 1630072464242,
+    "stop" : 1630072464850,
+    "duration" : 608
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,15 +15,15 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "8be8018cf2a00537",
+      "uid" : "a20780dd27425c34",
       "name" : "Request",
-      "source" : "8be8018cf2a00537.html",
+      "source" : "a20780dd27425c34.html",
       "type" : "text/html",
       "size" : 1163
     }, {
-      "uid" : "562e81b9d5233eae",
+      "uid" : "6f6504acefec2a1f",
       "name" : "HTTP/1.1 400 Bad Request",
-      "source" : "562e81b9d5233eae.html",
+      "source" : "6f6504acefec2a1f.html",
       "type" : "text/html",
       "size" : 2857
     } ],
@@ -54,6 +54,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e274112da275208f.json",
+  "source" : "7c769e3c3b53b651.json",
   "parameterValues" : [ ]
 }
