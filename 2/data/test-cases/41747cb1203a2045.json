@@ -1,11 +1,11 @@
 {
-  "uid" : "eb7971e83b1930aa",
+  "uid" : "41747cb1203a2045",
   "name" : "simpleRestTest()",
   "historyId" : "500adcf4fbca137846d316a85c8b6e08",
   "time" : {
-    "start" : 1630072768339,
-    "stop" : 1630072768857,
-    "duration" : 518
+    "start" : 1630072866135,
+    "stop" : 1630072866642,
+    "duration" : 507
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "eb7971e83b1930aa.json",
+  "source" : "41747cb1203a2045.json",
   "parameterValues" : [ ]
 }
