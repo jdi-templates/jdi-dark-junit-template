@@ -1,11 +1,11 @@
 {
-  "uid" : "ccceda3e56ca49ea",
+  "uid" : "f60857166ac74604",
   "name" : "createCardInBoard()",
   "historyId" : "a36ba0e1fa423739e9d6e131ad4a9fda",
   "time" : {
-    "start" : 1630072561137,
-    "stop" : 1630072563369,
-    "duration" : 2232
+    "start" : 1630072671001,
+    "stop" : 1630072673380,
+    "duration" : 2379
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ccceda3e56ca49ea.json",
+  "source" : "f60857166ac74604.json",
   "parameterValues" : [ ]
 }

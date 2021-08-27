@@ -1,11 +1,11 @@
 {
-  "uid" : "1d3875491841b1",
-  "name" : "htmlBodyParseTest()",
-  "historyId" : "2aea9c22aacacdd9885f580447e3a35a",
+  "uid" : "9940a00c0f11082c",
+  "name" : "assignBoardToOrganization()",
+  "historyId" : "4d9f70573ecd1dc70043597f2c4ce2fd",
   "time" : {
-    "start" : 1630072556671,
-    "stop" : 1630072557373,
-    "duration" : 702
+    "start" : 1630072669777,
+    "stop" : 1630072670997,
+    "duration" : 1220
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,10 +14,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "package",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1d3875491841b1.json",
+  "source" : "9940a00c0f11082c.json",
   "parameterValues" : [ ]
 }
