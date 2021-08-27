@@ -1,11 +1,11 @@
 {
-  "uid" : "ee0901ba79e1d0b3",
-  "name" : "simpleRestTest()",
-  "historyId" : "500adcf4fbca137846d316a85c8b6e08",
+  "uid" : "592958ebe3d37809",
+  "name" : "createCardInBoard()",
+  "historyId" : "a36ba0e1fa423739e9d6e131ad4a9fda",
   "time" : {
-    "start" : 1630065025979,
-    "stop" : 1630065026115,
-    "duration" : 136
+    "start" : 1630065104720,
+    "stop" : 1630065105828,
+    "duration" : 1108
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,10 +14,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "package",
-    "value" : "com.epam.jdi.httptests.example.ServiceTests"
+    "value" : "com.epam.jdi.httptests.example.TrelloTests"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ee0901ba79e1d0b3.json",
+  "source" : "592958ebe3d37809.json",
   "parameterValues" : [ ]
 }
