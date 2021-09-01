@@ -1,100 +1,100 @@
 [ {
-  "uid" : "92041806f769180c",
-  "name" : "assignBoardToOrganization()",
-  "time" : {
-    "start" : 1630521299441,
-    "stop" : 1630521300394,
-    "duration" : 953
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6fd880248b952028",
-  "name" : "noServiceObjectTest()",
-  "time" : {
-    "start" : 1630521296807,
-    "stop" : 1630521297323,
-    "duration" : 516
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "de9b2e5d47539b0a",
-  "name" : "serviceInitTest()",
-  "time" : {
-    "start" : 1630521298310,
-    "stop" : 1630521298810,
-    "duration" : 500
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b013363f3eafe7ab",
-  "name" : "cookiesTest()",
-  "time" : {
-    "start" : 1630521287570,
-    "stop" : 1630521289717,
-    "duration" : 2147
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fe72fbf3bfe03f16",
-  "name" : "htmlBodyParseTest()",
-  "time" : {
-    "start" : 1630521296083,
-    "stop" : 1630521296806,
-    "duration" : 723
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8f6f3bb080af0eba",
+  "uid" : "35444285dc2d3bcd",
   "name" : "retryRequestTest()",
   "time" : {
-    "start" : 1630521289806,
-    "stop" : 1630521296081,
-    "duration" : 6275
+    "start" : 1630521387663,
+    "stop" : 1630521393211,
+    "duration" : 5548
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "49806b817e75305b",
+  "uid" : "4b4f89d52bd210c0",
   "name" : "assignBoardToOrganization()",
   "time" : {
-    "start" : 1630521298875,
-    "stop" : 1630521299430,
-    "duration" : 555
+    "start" : 1630521395830,
+    "stop" : 1630521396931,
+    "duration" : 1101
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "78ca4cd866a1c979",
-  "name" : "statusTestWithQueryInPath()",
-  "time" : {
-    "start" : 1630521297864,
-    "stop" : 1630521298309,
-    "duration" : 445
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b36c9f3caaddd346",
+  "uid" : "119b0883f628dacd",
   "name" : "createCardInBoard()",
   "time" : {
-    "start" : 1630521300399,
-    "stop" : 1630521302265,
-    "duration" : 1866
+    "start" : 1630521396935,
+    "stop" : 1630521398729,
+    "duration" : 1794
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f88eb929d5472474",
+  "uid" : "3710bf69c5b32e9f",
+  "name" : "htmlBodyParseTest()",
+  "time" : {
+    "start" : 1630521393213,
+    "stop" : 1630521393781,
+    "duration" : 568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45c711c9ff6be795",
+  "name" : "cookiesTest()",
+  "time" : {
+    "start" : 1630521385863,
+    "stop" : 1630521387598,
+    "duration" : 1735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8b0d6494f5624f4",
+  "name" : "noServiceObjectTest()",
+  "time" : {
+    "start" : 1630521393785,
+    "stop" : 1630521394098,
+    "duration" : 313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "39e40592c6d64d8f",
+  "name" : "serviceInitTest()",
+  "time" : {
+    "start" : 1630521394760,
+    "stop" : 1630521395167,
+    "duration" : 407
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aed1840a5acc4cee",
+  "name" : "assignBoardToOrganization()",
+  "time" : {
+    "start" : 1630521395266,
+    "stop" : 1630521395825,
+    "duration" : 559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e71c94582033afaa",
+  "name" : "statusTestWithQueryInPath()",
+  "time" : {
+    "start" : 1630521394460,
+    "stop" : 1630521394759,
+    "duration" : 299
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c701e29f5438d558",
   "name" : "simpleRestTest()",
   "time" : {
-    "start" : 1630521297325,
-    "stop" : 1630521297863,
-    "duration" : 538
+    "start" : 1630521394102,
+    "stop" : 1630521394458,
+    "duration" : 356
   },
   "status" : "passed",
   "severity" : "normal"

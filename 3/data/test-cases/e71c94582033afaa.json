@@ -1,11 +1,11 @@
 {
-  "uid" : "6fd880248b952028",
-  "name" : "noServiceObjectTest()",
-  "historyId" : "db381fb27b4ab66e475a34f009137665",
+  "uid" : "e71c94582033afaa",
+  "name" : "statusTestWithQueryInPath()",
+  "historyId" : "79df6ef7ed9b677a5c0ac5aef5cbeab5",
   "time" : {
-    "start" : 1630521296807,
-    "stop" : 1630521297323,
-    "duration" : 516
+    "start" : 1630521394460,
+    "stop" : 1630521394759,
+    "duration" : 299
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6fd880248b952028.json",
+  "source" : "e71c94582033afaa.json",
   "parameterValues" : [ ]
 }
