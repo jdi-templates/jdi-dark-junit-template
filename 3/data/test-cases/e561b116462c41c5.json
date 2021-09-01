@@ -1,11 +1,11 @@
 {
-  "uid" : "e4cdd7e826b2e6f2",
-  "name" : "cookiesTest()",
-  "historyId" : "735d4adedd905decb6dc7b8cbad6081f",
+  "uid" : "e561b116462c41c5",
+  "name" : "noServiceObjectTest()",
+  "historyId" : "db381fb27b4ab66e475a34f009137665",
   "time" : {
-    "start" : 1630521478009,
-    "stop" : 1630521480434,
-    "duration" : 2425
+    "start" : 1630521582824,
+    "stop" : 1630521583335,
+    "duration" : 511
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e4cdd7e826b2e6f2.json",
+  "source" : "e561b116462c41c5.json",
   "parameterValues" : [ ]
 }
