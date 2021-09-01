@@ -1,11 +1,11 @@
 {
-  "uid" : "adafe91690497a96",
+  "uid" : "90d8ea52715f5220",
   "name" : "assignBoardToOrganization()",
   "historyId" : "81c24cc8f5e83397577d374eeacf734",
   "time" : {
-    "start" : 1630521039554,
-    "stop" : 1630521040091,
-    "duration" : 537
+    "start" : 1630521135928,
+    "stop" : 1630521136551,
+    "duration" : 623
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,23 +15,23 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "180bffe362382077",
+      "uid" : "146023af11fa3dfe",
       "name" : "Request",
-      "source" : "180bffe362382077.html",
+      "source" : "146023af11fa3dfe.html",
       "type" : "text/html",
       "size" : 1163
     }, {
-      "uid" : "ecac1368748f04b",
+      "uid" : "a9f7d160c9c6002d",
       "name" : "HTTP/1.1 400 Bad Request",
-      "source" : "ecac1368748f04b.html",
+      "source" : "a9f7d160c9c6002d.html",
       "type" : "text/html",
       "size" : 2871
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -54,6 +54,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "adafe91690497a96.json",
+  "source" : "90d8ea52715f5220.json",
   "parameterValues" : [ ]
 }
