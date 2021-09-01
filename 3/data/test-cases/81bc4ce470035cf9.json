@@ -1,11 +1,11 @@
 {
-  "uid" : "bed1dbe581b82409",
+  "uid" : "81bc4ce470035cf9",
   "name" : "assignBoardToOrganization()",
   "historyId" : "4d9f70573ecd1dc70043597f2c4ce2fd",
   "time" : {
-    "start" : 1630521136583,
-    "stop" : 1630521137691,
-    "duration" : 1108
+    "start" : 1630521210837,
+    "stop" : 1630521211521,
+    "duration" : 684
   },
   "status" : "passed",
   "flaky" : false,
@@ -32,6 +32,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "bed1dbe581b82409.json",
+  "source" : "81bc4ce470035cf9.json",
   "parameterValues" : [ ]
 }
