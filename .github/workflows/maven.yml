@@ -1,0 +1,72 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Java CI with Maven
+env:
+  ALLURE_VERSION: "2.10.0"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Tests on JDK
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        java: [ 8, 9, 10, 11, 12, 13, 14, 15 ]  # doesn't work on 16
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java }}
+          java-package: jdk
+
+      - name: Build with Maven
+        id: build
+        run: mvn install -DskipTests -ntp
+
+      - name: Tests
+        id: ftests
+        timeout-minutes: 10
+        if: github.event_name == 'pull_request' && success()
+        run: mvn test -ntp
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        id: allure-setup
+        continue-on-error: true
+        if: github.event_name == 'pull_request' && failure()
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Generate Allure report
+        uses: simple-elf/allure-report-action@master
+        if: github.event_name == 'pull_request' && always()
+        with:
+          allure_results: target/allure-results
+          allure_report: target/allure-report
+          allure_history: allure-history
+
+      - name: Upload Allure report
+        uses: actions/upload-artifact@master
+        if: github.event_name == 'pull_request' && failure()
+        with:
+          name: Allure report
+          path: target/allure-report
+
+      - name: Deploy Allure report to Github Pages
+        if: github.event_name == 'pull_request' && always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
