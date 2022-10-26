@@ -7,7 +7,7 @@ import org.junit.jupiter.api.*;
 import java.util.List;
 
 import static com.epam.http.requests.ServiceInit.init;
-import static com.epam.jdi.tools.LinqUtils.map;
+import static com.jdiai.tools.LinqUtils.map;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

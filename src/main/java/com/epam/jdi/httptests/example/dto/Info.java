@@ -1,6 +1,6 @@
 package com.epam.jdi.httptests.example.dto;
 
-import com.epam.jdi.tools.DataClass;
+import com.jdiai.tools.DataClass;
 
 public class Info extends DataClass<Info> {
     public Object args;
