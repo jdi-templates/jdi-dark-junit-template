@@ -14,7 +14,7 @@
         <allure.version>2.19.0</allure.version>
         <allure.maven>2.11.2</allure.maven>
         <aspectj.version>1.9.6</aspectj.version>
-        <jdi-dark.version>1.1.11</jdi-dark.version>
+<!--        <jdi-dark.version>1.1.11</jdi-dark.version>-->
         <log4j2.version>2.17.1</log4j2.version>
         <!--suppress UnresolvedMavenProperty -->
         <profile>${env.BUILD_PROFILE}</profile>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-dark</artifactId>
-            <version>${jdi-dark.version}</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
